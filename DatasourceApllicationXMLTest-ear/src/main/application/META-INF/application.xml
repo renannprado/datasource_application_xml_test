@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/application_7.xsd" version="7">
+    <display-name>DatasourceApllicationXMLTest-ear</display-name>
+    <module>
+        <web>
+            <web-uri>DatasourceApllicationXMLTest-web.war</web-uri>
+            <context-root>/datasource_test</context-root>
+        </web>
+    </module>
+    <module>
+        <ejb>DatasourceApllicationXMLTest-ejb.jar</ejb>
+    </module>
+    <library-directory>lib</library-directory>
+    <data-source>
+        <name>java:jboss/datasources/TestDS</name>
+        <class-name>org.mariadb.jdbc.Driver</class-name>
+        <url>jdbc:mariadb://mariadbvm:3306/test_db</url>
+        <user>root</user>
+        <password>123</password>
+    </data-source>
+</application>

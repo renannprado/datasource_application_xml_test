@@ -1,0 +1,92 @@
+[2016-01-30 08:23:52,075] Artifact DatasourceApllicationXMLTest-ear:ear: Artifact is being deployed, please wait...
+20:23:52,159 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "DatasourceApllicationXMLTest-ear.ear" (runtime-name: "DatasourceApllicationXMLTest-ear.ear")
+20:23:52,235 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0207: Starting subdeployment (runtime-name: "DatasourceApllicationXMLTest-web.war")
+20:23:52,235 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0207: Starting subdeployment (runtime-name: "DatasourceApllicationXMLTest-ejb.jar")
+20:23:52,349 TRACE [org.jboss.as.jpa] (MSC service thread 1-8) parse checking if "/content/DatasourceApllicationXMLTest-ear.ear/META-INF/persistence.xml" exists, result = false
+20:23:52,349 TRACE [org.jboss.as.jpa] (MSC service thread 1-8) parse checking if "/content/DatasourceApllicationXMLTest-ear.ear/lib/mariadb-java-client.jar/META-INF/persistence.xml" exists, result = false
+20:23:52,349 TRACE [org.jboss.as.jpa] (MSC service thread 1-8) parsed persistence unit definitions for ear DatasourceApllicationXMLTest-ear.ear
+20:23:52,349 TRACE [org.jboss.as.jpa] (MSC service thread 1-8) incrementing PU count for DatasourceApllicationXMLTest-ear.ear by 0
+20:23:52,363 TRACE [org.jboss.as.jpa] (MSC service thread 1-8) parse checking if "/content/DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-web.war/WEB-INF/classes/META-INF/persistence.xml" exists, result = false
+20:23:52,363 TRACE [org.jboss.as.jpa] (MSC service thread 1-8) parse checking if "/content/DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-web.war/WEB-INF/lib/flyway-core-3.2.1.jar/META-INF/persistence.xml" exists, result = false
+20:23:52,363 TRACE [org.jboss.as.jpa] (MSC service thread 1-8) parse checking if "/content/DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-web.war/WEB-INF/lib/google-maps-services-0.1.9.jar/META-INF/persistence.xml" exists, result = false
+20:23:52,364 TRACE [org.jboss.as.jpa] (MSC service thread 1-4) parse checking if "/content/DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-ejb.jar/META-INF/persistence.xml" exists, result = true
+20:23:52,364 TRACE [org.jboss.as.jpa] (MSC service thread 1-8) parse checking if "/content/DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-web.war/WEB-INF/lib/gson-2.3.1.jar/META-INF/persistence.xml" exists, result = false
+20:23:52,364 TRACE [org.jboss.as.jpa] (MSC service thread 1-8) parse checking if "/content/DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-web.war/WEB-INF/lib/joda-time-2.4.jar/META-INF/persistence.xml" exists, result = false
+20:23:52,364 TRACE [org.jboss.as.jpa] (MSC service thread 1-8) parse checking if "/content/DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-web.war/WEB-INF/lib/okhttp-2.0.0.jar/META-INF/persistence.xml" exists, result = false
+20:23:52,364 TRACE [org.jboss.as.jpa] (MSC service thread 1-8) parse checking if "/content/DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-web.war/WEB-INF/lib/okio-1.0.0.jar/META-INF/persistence.xml" exists, result = false
+20:23:52,364 TRACE [org.jboss.as.jpa] (MSC service thread 1-4) parse persistence.xml: attribute value(0) = Test_PersistenceUnit
+20:23:52,364 TRACE [org.jboss.as.jpa] (MSC service thread 1-8) parsed persistence unit definitions for war DatasourceApllicationXMLTest-web.war
+20:23:52,364 TRACE [org.jboss.as.jpa] (MSC service thread 1-4) parse persistence.xml: attribute value(1) = JTA
+20:23:52,364 TRACE [org.jboss.as.jpa] (MSC service thread 1-8) incrementing PU count for DatasourceApllicationXMLTest-ear.ear by 0
+20:23:52,364 TRACE [org.jboss.as.jpa] (MSC service thread 1-4) parse persistence.xml: element=provider
+20:23:52,364 TRACE [org.jboss.as.jpa] (MSC service thread 1-4) parse persistence.xml: element=jta-data-source
+20:23:52,365 TRACE [org.jboss.as.jpa] (MSC service thread 1-4) parse persistence.xml: element=properties
+20:23:52,365 TRACE [org.jboss.as.jpa] (MSC service thread 1-4) parse persistence.xml: reached ending persistence-unit tag
+20:23:52,365 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for Test_PersistenceUnit
+20:23:52,365 TRACE [org.jboss.as.jpa] (MSC service thread 1-4) PersistenceUnitMetadataImpl(version=2.1) [
+	name: Test_PersistenceUnit
+	jtaDataSource: java:jboss/datasources/TestDS
+	nonJtaDataSource: null
+	transactionType: JTA
+	provider: org.hibernate.ejb.HibernatePersistence
+	classes[
+	]
+	packages[
+	]
+	mappingFiles[
+	]
+	jarFiles[
+	]
+	validation-mode: AUTO
+	shared-cache-mode: UNSPECIFIED
+	properties[
+		hibernate.id.new_generator_mappings: false
+		hibernate.enable_lazy_load_no_trans: true
+		hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+		hibernate.show_sql: true
+		wildfly.jpa.twophasebootstrap: false
+	]]
+20:23:52,365 TRACE [org.jboss.as.jpa] (MSC service thread 1-4) parsed persistence unit definitions for jar DatasourceApllicationXMLTest-ejb.jar
+20:23:52,365 TRACE [org.jboss.as.jpa] (MSC service thread 1-4) incrementing PU count for DatasourceApllicationXMLTest-ear.ear by 1
+20:23:52,366 DEBUG [org.jboss.as.jpa] (MSC service thread 1-7) added javax.persistence.api:main dependency to DatasourceApllicationXMLTest-ear.ear
+20:23:52,367 DEBUG [org.jboss.as.jpa] (MSC service thread 1-7) added org.jboss.as.jpa:main dependency to DatasourceApllicationXMLTest-ear.ear
+20:23:52,367 DEBUG [org.jboss.as.jpa] (MSC service thread 1-7) added org.jboss.as.jpa.spi:main dependency to DatasourceApllicationXMLTest-ear.ear
+20:23:52,367 DEBUG [org.jboss.as.jpa] (MSC service thread 1-7) added org.javassist:main dependency to DatasourceApllicationXMLTest-ear.ear
+20:23:52,367 DEBUG [org.jboss.as.jpa] (MSC service thread 1-7) added org.hibernate:main dependency to DatasourceApllicationXMLTest-ear.ear
+20:23:52,367 DEBUG [org.jboss.as.jpa] (MSC service thread 1-7) Test_PersistenceUnit is configured to use persistence provider 'org.hibernate.ejb.HibernatePersistence', adding an optional dependency on module 'org.hibernate'
+20:23:52,368 DEBUG [org.jboss.as.jpa] (MSC service thread 1-5) added javax.persistence.api:main dependency to DatasourceApllicationXMLTest-ejb.jar
+20:23:52,368 DEBUG [org.jboss.as.jpa] (MSC service thread 1-7) added javax.persistence.api:main dependency to DatasourceApllicationXMLTest-web.war
+20:23:52,368 DEBUG [org.jboss.as.jpa] (MSC service thread 1-5) added org.jboss.as.jpa:main dependency to DatasourceApllicationXMLTest-ejb.jar
+20:23:52,368 DEBUG [org.jboss.as.jpa] (MSC service thread 1-7) added org.jboss.as.jpa:main dependency to DatasourceApllicationXMLTest-web.war
+20:23:52,368 DEBUG [org.jboss.as.jpa] (MSC service thread 1-5) added org.jboss.as.jpa.spi:main dependency to DatasourceApllicationXMLTest-ejb.jar
+20:23:52,368 DEBUG [org.jboss.as.jpa] (MSC service thread 1-7) added org.jboss.as.jpa.spi:main dependency to DatasourceApllicationXMLTest-web.war
+20:23:52,368 DEBUG [org.jboss.as.jpa] (MSC service thread 1-7) added org.javassist:main dependency to DatasourceApllicationXMLTest-web.war
+20:23:52,368 DEBUG [org.jboss.as.jpa] (MSC service thread 1-5) added org.javassist:main dependency to DatasourceApllicationXMLTest-ejb.jar
+20:23:52,369 DEBUG [org.jboss.as.jpa] (MSC service thread 1-7) added org.hibernate:main dependency to DatasourceApllicationXMLTest-web.war
+20:23:52,369 DEBUG [org.jboss.as.jpa] (MSC service thread 1-5) added org.hibernate:main dependency to DatasourceApllicationXMLTest-ejb.jar
+20:23:52,369 DEBUG [org.jboss.as.jpa] (MSC service thread 1-7) Test_PersistenceUnit is configured to use persistence provider 'org.hibernate.ejb.HibernatePersistence', adding an optional dependency on module 'org.hibernate'
+20:23:52,369 DEBUG [org.jboss.as.jpa] (MSC service thread 1-5) Test_PersistenceUnit is configured to use persistence provider 'org.hibernate.ejb.HibernatePersistence', adding an optional dependency on module 'org.hibernate'
+20:23:52,369 DEBUG [org.jboss.as.jpa] (MSC service thread 1-7) Adding dependency on PU service service jboss.persistenceunit."DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-ejb.jar#Test_PersistenceUnit" for component javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV
+20:23:52,369 DEBUG [org.jboss.as.jpa] (MSC service thread 1-7) Adding dependency on PU service service jboss.persistenceunit."DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-ejb.jar#Test_PersistenceUnit" for component javax.servlet.jsp.jstl.tlv.ScriptFreeTLV
+20:23:52,369 DEBUG [org.jboss.as.jpa] (MSC service thread 1-7) Adding dependency on PU service service jboss.persistenceunit."DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-ejb.jar#Test_PersistenceUnit" for component javax.faces.webapp.FacetTag
+20:23:52,369 DEBUG [org.jboss.as.jpa] (MSC service thread 1-7) Adding dependency on PU service service jboss.persistenceunit."DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-ejb.jar#Test_PersistenceUnit" for component com.sun.faces.config.ConfigureListener
+20:23:52,386 TRACE [org.jboss.as.jpa] (MSC service thread 1-8) install persistence unit definitions for ear DatasourceApllicationXMLTest-ear.ear
+20:23:52,386 TRACE [org.jboss.as.jpa] (MSC service thread 1-8) install persistence unit definitions for ear mariadb-java-client.jar
+20:23:52,387 TRACE [org.jboss.as.jpa] (MSC service thread 1-8) returning global (module) Persistence Provider org.hibernate.jpa.HibernatePersistenceProvider
+20:23:52,387 DEBUG [org.jboss.as.jpa] (MSC service thread 1-8) loaded persistence provider adapter org.jboss.as.jpa.hibernate5.HibernatePersistenceProviderAdaptor from classloader ModuleClassLoader for Module "org.hibernate:main" from local module loader @18ef96 (finder: local module finder @6956de9 (roots: /Users/renannp/development/application_servers/wildfly-10.0.0.CR5/modules,/Users/renannp/development/application_servers/wildfly-10.0.0.CR5/modules/system/layers/base))
+20:23:52,387 TRACE [org.jboss.as.jpa] (MSC service thread 1-3) install persistence unit definition for jar DatasourceApllicationXMLTest-ejb.jar
+20:23:52,388 TRACE [org.jboss.as.jpa] (MSC service thread 1-3) adding 'vfs:/content/DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-ejb.jar/' to annotation index map
+20:23:52,388 TRACE [org.jboss.as.jpa] (MSC service thread 1-3) adding 'vfs:/content/DatasourceApllicationXMLTest-ear.ear/lib/mariadb-java-client.jar/' to annotation index map
+20:23:52,388 TRACE [org.jboss.as.jpa] (MSC service thread 1-3) adding 'vfs:/content/DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-ejb.jar/' to annotation index map
+20:23:52,388 TRACE [org.jboss.as.jpa] (MSC service thread 1-3) returning global (module) Persistence Provider org.hibernate.jpa.HibernatePersistenceProvider
+20:23:52,388 TRACE [org.jboss.as.jpa] (MSC service thread 1-3) added PersistenceUnitService for 'service jboss.persistenceunit."DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-ejb.jar#Test_PersistenceUnit"'.  PU is ready for injector action.
+20:23:52,389 TRACE [org.jboss.as.jpa] (MSC service thread 1-3) returning global (module) Persistence Provider org.hibernate.jpa.HibernatePersistenceProvider
+20:23:52,392 TRACE [org.jboss.as.jpa] (MSC service thread 1-6) install persistence unit definitions for war null
+20:23:52,392 TRACE [org.jboss.as.jpa] (MSC service thread 1-6) returning global (module) Persistence Provider org.hibernate.jpa.HibernatePersistenceProvider
+20:23:52,393 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 7) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "DatasourceApllicationXMLTest-ear.ear")]) - failure description: {"WFLYCTL0180: Services with missing/unavailable dependencies" => ["jboss.persistenceunit.\"DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-ejb.jar#Test_PersistenceUnit\" is missing [jboss.naming.context.java.jboss.datasources.TestDS]"]}
+20:23:52,395 ERROR [org.jboss.as.server] (management-handler-thread - 7) WFLYSRV0021: Deploy of deployment "DatasourceApllicationXMLTest-ear.ear" was rolled back with the following failure message: {"WFLYCTL0180: Services with missing/unavailable dependencies" => ["jboss.persistenceunit.\"DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-ejb.jar#Test_PersistenceUnit\" is missing [jboss.naming.context.java.jboss.datasources.TestDS]"]}
+20:23:52,403 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0208: Stopped subdeployment (runtime-name: DatasourceApllicationXMLTest-ejb.jar) in 8ms
+20:23:52,407 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0208: Stopped subdeployment (runtime-name: DatasourceApllicationXMLTest-web.war) in 11ms
+20:23:52,408 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment DatasourceApllicationXMLTest-ear.ear (runtime-name: DatasourceApllicationXMLTest-ear.ear) in 13ms
+[2016-01-30 08:23:52,435] Artifact DatasourceApllicationXMLTest-ear:ear: Error during artifact deployment. See server log for details.
+[2016-01-30 08:23:52,435] Artifact DatasourceApllicationXMLTest-ear:ear: java.lang.Exception: {"WFLYCTL0180: Services with missing/unavailable dependencies" => ["jboss.persistenceunit.\"DatasourceApllicationXMLTest-ear.ear/DatasourceApllicationXMLTest-ejb.jar#Test_PersistenceUnit\" is missing [jboss.naming.context.java.jboss.datasources.TestDS]"]}

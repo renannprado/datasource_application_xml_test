@@ -1,0 +1,8 @@
+# compiled
+target/
+*.iml
+.idea/
+
+# IDE files
+nb-configuration.xml
+nbactions.xml
