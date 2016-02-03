@@ -16,7 +16,7 @@
     <library-directory>lib</library-directory>
     <data-source>
         <name>java:jboss/datasources/TestDS</name>
-        <class-name>org.mariadb.jdbc.Driver</class-name>
+        <class-name>org.mariadb.jdbc.MariaDbDataSource</class-name>
         <url>jdbc:mariadb://mariadbvm:3306/test_db</url>
         <user>root</user>
         <password>123</password>
